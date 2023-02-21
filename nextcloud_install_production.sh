@@ -251,7 +251,8 @@ then
     choice="2 Disks Auto"
 else
     msg_box "This server is designed to run with two disks, one for OS and one for DATA. \
-This will get you the best performance since the second disk is using ZFS which is a superior filesystem.
+This will get you the best performance since the second disk is using 
+which is a superior filesystem.
 
 Though not recommended, you can still choose to only run on one disk, \
 if for example it's your only option on the hypervisor you're running.
@@ -277,9 +278,9 @@ case "$choice" in
 
     ;;
     "2 Disks Manual")
-        run_script DISK format-chosen
+        # run_script DISK format-chosen
         # Change to zfs-mount-generator
-        run_script DISK change-to-zfs-mount-generator
+        # run_script DISK change-to-zfs-mount-generator
         # Create daily zfs prune script
         run_script DISK create-daily-zfs-prune
     ;;
