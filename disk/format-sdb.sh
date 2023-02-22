@@ -46,7 +46,7 @@ then
 elif [[ "$SYSVENDOR" == "QEMU" || "$SYSVENDOR" == "Red Hat" ]];
 then
     SYSNAME="KVM/QEMU"
-    DEVTYPE=vdb
+    DEVTYPE=sdb
 elif [ "$SYSVENDOR" == "DigitalOcean" ];
 then
     SYSNAME="DigitalOcean"
