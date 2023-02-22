@@ -272,9 +272,9 @@ case "$choice" in
     "2 Disks Auto")
         run_script DISK format-sdb
         # Change to zfs-mount-generator
-        run_script DISK change-to-zfs-mount-generator
+        # run_script DISK change-to-zfs-mount-generator
         # Create daily zfs prune script
-        run_script DISK create-daily-zfs-prune
+        # run_script DISK create-daily-zfs-prune
 
     ;;
     "2 Disks Manual")
